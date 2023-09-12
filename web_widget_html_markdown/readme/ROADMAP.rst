@@ -1,1 +1,2 @@
-* Implement conversion from HTML to Markdown, either through a JS or a Python module, instead of not allowing it, or allowing it only after HTML is emptied.
+* Create a config parameter switch such as this that will enable a markdown option
+  for html fields throughout the whole system.
