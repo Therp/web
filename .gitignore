@@ -15,6 +15,9 @@ build/
 develop-eggs/
 dist/
 eggs/
+# Below two lines needed to later allow static/lib.
+!lib/
+lib/*
 lib64/
 parts/
 sdist/

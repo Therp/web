@@ -12,25 +12,25 @@ odoo.define("web_widget_html_markdown.FieldHtmlMarkDown", function (require) {
     var QWeb = core.qweb;
     var _t = core._t;
     var _lt = core._lt;
-    var STATIC_PATH = "/web_widget_html_markdown/static/src";
-    var LIBS_PATH = STATIC_PATH + "/lib/";
-    var CUST_CSS_PATH = STATIC_PATH + "/css/";
+    var STATIC_PATH = "/web_widget_html_markdown/static";
+    var LIB_PATH = STATIC_PATH + "/lib/";
+    var SRC_PATH = STATIC_PATH + "/src/";
 
     var FieldHtmlMarkDown = field_html.extend({
         description: _lt("HtmlMarkdown"),
         classname: "oe_form_field oe_form_field_html_markdown",
         supportedFieldTypes: ["html"],
         jsLibs: [
-            LIBS_PATH + "turndown.js",
-            LIBS_PATH + "marked.js",
-            LIBS_PATH + "dropzone.js",
-            LIBS_PATH + "bootstrap-markdown.js",
+            LIB_PATH + "turndown.js",
+            LIB_PATH + "marked.js",
+            LIB_PATH + "dropzone.js",
+            LIB_PATH + "bootstrap-markdown.js",
         ],
         cssLibs: [
-            LIBS_PATH + "bootstrap-markdown.min.css",
-            CUST_CSS_PATH + "web_widget_html_markdown.css",
+            LIB_PATH + "bootstrap-markdown.min.css",
+            SRC_PATH + "css/web_widget_html_markdown.css",
         ],
-        xmlDependencies: [STATIC_PATH + "/xml/radio_info.xml"],
+        xmlDependencies: [SRC_PATH + "xml/radio_info.xml"],
         /* =========================INIT AND START===============*/
         init: function (parent, options) {
             this._super.apply(this, arguments);
