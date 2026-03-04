@@ -1,0 +1,23 @@
+.o_control_panel {
+    position: relative;
+}
+
+.o_filter_header_toggle {
+    position: absolute;
+    right: 110px;
+    top: 62px;
+    z-index: 10;
+    padding: 0.25rem 0.5rem;
+}
+
+.o_filter_header_button_bar {
+    margin-top: 6px;
+}
+
+.o_filter_header_button_bar .btn {
+    border-radius: 0;
+}
+
+.o_filter_header_button_bar .btn.active {
+    font-weight: 600;
+}
